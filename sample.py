@@ -131,7 +131,7 @@ def worker(op):
                                 try:
                                     L = aa
                                     for target in katok["list"]["bleclist"]:
-                                        if target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids):
+                                        if target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids) or target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids):
                                             L.deleteOtherFromChat(op.param1,[target])
                                             L.cancelChatInvitation(op.param1,[target])
                                         else:pass
@@ -139,7 +139,7 @@ def worker(op):
                                     try:
                                         L = bb
                                         for target in katok["list"]["bleclist"]:
-                                            if target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids):
+                                            if target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids) or target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids):
                                                 L.deleteOtherFromChat(op.param1,[target])
                                                 L.cancelChatInvitation(op.param1,[target])
                                             else:pass
@@ -147,7 +147,7 @@ def worker(op):
                                         try:
                                             L = cc
                                             for target in katok["list"]["bleclist"]:
-                                                if target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids):
+                                                if target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids) or target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids):
                                                     L.deleteOtherFromChat(op.param1,[target])
                                                     L.cancelChatInvitation(op.param1,[target])
                                                 else:pass
@@ -155,7 +155,7 @@ def worker(op):
                                             try:
                                                 L = dd
                                                 for target in katok["list"]["bleclist"]:
-                                                    if target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids):
+                                                    if target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids) or target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids):
                                                         L.deleteOtherFromChat(op.param1,[target])
                                                         L.cancelChatInvitation(op.param1,[target])
                                                     else:pass
@@ -163,7 +163,7 @@ def worker(op):
                                                 try:
                                                     L = ee
                                                     for target in katok["list"]["bleclist"]:
-                                                        if target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids):
+                                                        if target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids) or target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids):
                                                             L.deleteOtherFromChat(op.param1,[target])
                                                             L.cancelChatInvitation(op.param1,[target])
                                                         else:pass
@@ -171,7 +171,7 @@ def worker(op):
                                                     try:
                                                         L = ff
                                                         for target in katok["list"]["bleclist"]:
-                                                            if target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids):
+                                                            if target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids) or target in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids):
                                                                 L.deleteOtherFromChat(op.param1,[target])
                                                                 L.cancelChatInvitation(op.param1,[target])
                                                             else:pass
