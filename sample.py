@@ -541,7 +541,7 @@ def worker(op):
                     cl.sendMessage(to,str(total))
 
                 if cmd == "cban":
-                    katok["list"]["bleclist"] = []
+                    katok["list"]["bleclist"] = {}
                     cl.sendMessage(to,'done clear BL')
                     backup()
 
