@@ -32,7 +32,7 @@ def backup():
     except Exception as error:
         print(error)
         return False
-katok['list']['bot'] = [];katok['list']['bot'].remove(mid);katok['list']['bot'].remove(Amid);katok['list']['bot'].remove(Bmid);katok['list']['bot'].remove(Cmid);katok['list']['bot'].remove(Dmid);katok['list']['bot'].remove(Emid);katok['list']['bot'].remove(Fmid);backup()
+katok['list']['bot'] = [];katok['list']['bot'].append(mid);katok['list']['bot'].append(Amid);katok['list']['bot'].append(Bmid);katok['list']['bot'].append(Cmid);katok['list']['bot'].append(Dmid);katok['list']['bot'].append(Emid);katok['list']['bot'].append(Fmid);backup()
 print("LOGIN SUSKSES")
 #=========================================================
 helpM ="""
