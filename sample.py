@@ -242,7 +242,7 @@ def worker(op):
                             for targets in katok['list']['bot']:
                                 if targets not in L.getProfile().mid:
                                     if targets in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                        XYY[x] = True
+                                        XYY[targets] = True
                                     else:pass
                                 else:pass
                             L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
@@ -253,7 +253,7 @@ def worker(op):
                                 for targets in katok['list']['bot']:
                                     if targets not in L.getProfile().mid:
                                         if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                            XYY[x] = True
+                                            XYY[targets] = True
                                         else:pass
                                     else:pass
                                 L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
@@ -264,7 +264,7 @@ def worker(op):
                                     for targets in katok['list']['bot']:
                                         if targets not in L.getProfile().mid:
                                             if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                                XYY[x] = True
+                                                XYY[targets] = True
                                             else:pass
                                         else:pass
                                     L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
@@ -275,7 +275,7 @@ def worker(op):
                                         for targets in katok['list']['bot']:
                                             if targets not in L.getProfile().mid:
                                                 if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                                    XYY[x] = True
+                                                    XYY[targets] = True
                                                 else:pass
                                             else:pass
                                         L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
@@ -286,7 +286,7 @@ def worker(op):
                                             for targets in katok['list']['bot']:
                                                 if targets not in L.getProfile().mid:
                                                     if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                                        XYY[x] = True
+                                                        XYY[targets] = True
                                                     else:pass
                                                 else:pass
                                             L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
@@ -297,7 +297,7 @@ def worker(op):
                                                 for targets in katok['list']['bot']:
                                                     if targets not in L.getProfile().mid:
                                                         if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                                            XYY[x] = True
+                                                            XYY[targets] = True
                                                         else:pass
                                                     else:pass
                                                 L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
@@ -311,7 +311,7 @@ def worker(op):
                             XYY = {}
                             for targets in katok['list']['owner']:
                                 if targets in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                    XYY[x] = True
+                                    XYY[targets] = True
                                 else:pass
                             L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
                         except:
@@ -320,7 +320,7 @@ def worker(op):
                                 XYY = {}
                                 for targets in katok['list']['owner']:
                                     if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                        XYY[x] = True
+                                        XYY[targets] = True
                                     else:pass
                                 L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
                             except:
@@ -329,7 +329,7 @@ def worker(op):
                                     XYY = {}
                                     for targets in katok['list']['owner']:
                                         if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                            XYY[x] = True
+                                            XYY[targets] = True
                                         else:pass
                                     L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
                                 except:
@@ -338,7 +338,7 @@ def worker(op):
                                         XYY = {}
                                         for targets in katok['list']['owner']:
                                             if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                                XYY[x] = True
+                                                XYY[targets] = True
                                             else:pass
                                         L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
                                     except:
@@ -347,7 +347,7 @@ def worker(op):
                                             XYY = {}
                                             for targets in katok['list']['owner']:
                                                 if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                                    XYY[x] = True
+                                                    XYY[targets] = True
                                                 else:pass
                                             L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
                                         except:
@@ -356,7 +356,7 @@ def worker(op):
                                                 XYY = {}
                                                 for targets in katok['list']['owner']:
                                                     if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                                        XYY[x] = True
+                                                        XYY[targets] = True
                                                     else:pass
                                                 L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
                                             except:pass
@@ -392,7 +392,7 @@ def worker(op):
                             for targets in katok['list']['bot']:
                                 if targets not in L.getProfile().mid:
                                     if targets in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                        XYY[x] = True
+                                        XYY[targets] = True
                                     else:pass
                                 else:pass
                             L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
@@ -403,7 +403,7 @@ def worker(op):
                                 for targets in katok['list']['bot']:
                                     if targets not in L.getProfile().mid:
                                         if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                            XYY[x] = True
+                                            XYY[targets] = True
                                         else:pass
                                     else:pass
                                 L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
@@ -414,7 +414,7 @@ def worker(op):
                                     for targets in katok['list']['bot']:
                                         if targets not in L.getProfile().mid:
                                             if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                                XYY[x] = True
+                                                XYY[targets] = True
                                             else:pass
                                         else:pass
                                     L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
@@ -425,7 +425,7 @@ def worker(op):
                                         for targets in katok['list']['bot']:
                                             if targets not in L.getProfile().mid:
                                                 if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                                    XYY[x] = True
+                                                    XYY[targets] = True
                                                 else:pass
                                             else:pass
                                         L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
@@ -436,7 +436,7 @@ def worker(op):
                                             for targets in katok['list']['bot']:
                                                 if targets not in L.getProfile().mid:
                                                     if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                                        XYY[x] = True
+                                                        XYY[targets] = True
                                                     else:pass
                                                 else:pass
                                             L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
@@ -447,7 +447,7 @@ def worker(op):
                                                 for targets in katok['list']['bot']:
                                                     if targets not in L.getProfile().mid:
                                                         if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                                            XYY[x] = True
+                                                            XYY[targets] = True
                                                         else:pass
                                                     else:pass
                                                 L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
@@ -461,7 +461,7 @@ def worker(op):
                             XYY = {}
                             for targets in katok['list']['owner']:
                                 if targets in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                    XYY[x] = True
+                                    XYY[targets] = True
                                 else:pass
                             L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
                         except:
@@ -470,7 +470,7 @@ def worker(op):
                                 XYY = {}
                                 for targets in katok['list']['owner']:
                                     if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                        XYY[x] = True
+                                        XYY[targets] = True
                                     else:pass
                                 L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
                             except:
@@ -479,7 +479,7 @@ def worker(op):
                                     XYY = {}
                                     for targets in katok['list']['owner']:
                                         if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                            XYY[x] = True
+                                            XYY[targets] = True
                                         else:pass
                                     L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
                                 except:
@@ -488,7 +488,7 @@ def worker(op):
                                         XYY = {}
                                         for targets in katok['list']['owner']:
                                             if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                                XYY[x] = True
+                                                XYY[targets] = True
                                             else:pass
                                         L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
                                     except:
@@ -497,7 +497,7 @@ def worker(op):
                                             XYY = {}
                                             for targets in katok['list']['owner']:
                                                 if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                                    XYY[x] = True
+                                                    XYY[targets] = True
                                                 else:pass
                                             L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
                                         except:
@@ -506,7 +506,7 @@ def worker(op):
                                                 XYY = {}
                                                 for targets in katok['list']['owner']:
                                                     if targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.inviteeMids) or targets not in list(L.getChats([op.param1]).chats[0].extra.groupExtra.memberMids):
-                                                        XYY[x] = True
+                                                        XYY[targets] = True
                                                     else:pass
                                                 L.deleteOtherFromChat(op.param1,[op.param2]);L.inviteIntoChat(op.param1, XYY)
                                             except:pass
