@@ -14,7 +14,7 @@ class Suwek:
         self.myToken = myToken
         self.lineServerPoll =  "https://legy-jp-addr-long.line.naver.jp/P4"
         self.lineServerTalk =  "https://legy-jp-addr-long.line.naver.jp/S4"
-        self.LINE_OBS_DOMAIN = 'https://obs-tw.line-apps.com'
+        self.LINE_OBS_DOMAIN = 'https://obs-sg.line-apps.com'
         self._session = requests.session()
         self.thisHeadersPoll = {}
         self.thisHeadersTalk = {}
